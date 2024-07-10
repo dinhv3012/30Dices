@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MainActivity"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Round TextView -->
+    <TextView
+        android:id="@+id/roundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round: 1"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Throws TextView -->
+    <TextView
+        android:id="@+id/throwsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throws: 0"
+        android:textSize="18sp"
+        android:layout_below="@id/roundTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Points TextView -->
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: 0"
+        android:textSize="18sp"
+        android:layout_below="@id/throwsTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Dice GridLayout -->
+    <GridLayout
+        android:id="@+id/diceGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pointsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <!-- Example ImageViews for dice -->
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/grey1"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/grey2"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/dice3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/grey3"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/dice4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/grey4"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/dice5"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/grey5"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/dice6"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/grey6"
+            android:layout_margin="8dp"/>
+    </GridLayout>
+
+    <!-- LinearLayout for Spinner and Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diceGrid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+        <!-- Roll Button -->
+        <Button
+            android:id="@+id/rollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Dice"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_marginStart="16dp"/>
+        <!-- Category Button -->
+         <Button
+	    android:id="@+id/categoryButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Choose Category"
+	    android:backgroundTint="@color/green"
+	    android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

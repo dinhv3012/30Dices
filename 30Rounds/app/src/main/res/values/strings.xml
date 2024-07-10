@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">30Rounds</string>
+    <string name="dice">Dice</string>
+    <string name="round">Round: </string>
+    <string name="throws_count">Throws: </string>
+    <string name="points">Points: </string>
+    <string name="throw_button">THROW</string>
+    <string-array name="category_array">
+        <item>Low</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>
